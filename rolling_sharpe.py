@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 
 def rolling_sharpe(daily_returns: pd.Series,
-                   risk_free_rate: pd.Series | float, window: int) -> pd.Series:
+                   risk_free_rate: (pd.Series | float), window: int) -> pd.Series:
     """
     Computes the rolling Sharpe ratio for a given ticker and risk-free rate.
     
